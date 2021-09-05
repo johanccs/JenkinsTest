@@ -26,7 +26,7 @@ namespace JenkinsTest.Api.Controllers
         [HttpGet]
         public string Get()
         {
-            return "Hello from webapi - Azure Devops Seems to work";
+            return "Hello from webapi - Add iisreset";
         }
     }
 }
