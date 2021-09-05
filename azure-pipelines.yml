@@ -28,7 +28,7 @@ steps:
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
 
-- task: PublishBuildArtifacts@0
+- task: PublishBuildArtifacts@2
   inputs:
     pathtoPublish: '$(Build.ArtifactStagingDirectory)'
     ArtifactName: 'jenkins'
