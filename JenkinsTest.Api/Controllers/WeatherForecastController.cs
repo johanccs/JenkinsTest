@@ -26,7 +26,7 @@ namespace JenkinsTest.Api.Controllers
         [HttpGet]
         public string Get()
         {
-            return "Hello from webapi version 3333";
+            return "Hello from webapi - Azure Devops";
         }
     }
 }
