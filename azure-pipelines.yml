@@ -29,6 +29,10 @@ steps:
     configuration: '$(buildConfiguration)'
 
 - task: PublishBuildArtifacts@4
+- task: PublishBuildArtifacts@1
   inputs:
-    pathtoPublish: '$(Build.ArtifactStagingDirectory)'
-    ArtifactName: 'jenkins'
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'drop'
+    publishLocation: 'FilePath'
+    TargetPath: '\\Main\jenkins'
+  
